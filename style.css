@@ -1,0 +1,360 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'pirata';
+    src: url("fonts/PirataOne-Regular.ttf") format('truetype');
+}
+
+body{
+    background:black;
+}
+
+header{
+    padding-top: 2%;
+    border: 1px 1px #E4DDD7;
+    width: 100%;
+    height: 90%;
+    background-image: url('gifs/header.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.campo{
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.menu nav a{
+    text-decoration: none;
+    color: #f5f5cf;
+    padding-right: 80px;
+    font-size: 18pt;
+    font-family: 'pirata';
+    text-shadow: 3px 3px rgb(0, 0, 0);
+   position: relative;
+}
+
+.menu nav ::after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-image:linear-gradient(45deg, rgb(0, 123, 189),rgb(19, 58, 186), rgb(30, 209, 146));
+    position:absolute;
+    top:30px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.menu nav a:hover::after{
+    width: 40px;
+}
+
+.logo img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.logo{
+    padding-right: 15%;
+    cursor: pointer;
+    font-family: 'pirata';
+    font-size: 15pt;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    color: #f5f5cf;;
+}
+
+.icones button{
+    width: 42px;
+    height: 42px;
+    padding-right: 2px;
+    align-items: center;
+    background-image:linear-gradient(45deg, rgb(62, 111, 218),rgb(97, 188, 248), rgb(74, 235, 154));
+    border: 3px outset rgb(0, 0, 0);
+    margin-left: 2px;
+    box-shadow: 2px 2px rgb(42, 41, 41);
+    cursor: pointer;
+}
+
+.icones button:hover{
+    background: rgb(172, 228, 228);
+}
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section.module.content{
+    padding: 20px 0;
+    background: rgba(0, 0, 0);
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+}
+section.module.parallax.parallax-1{
+    background-image: url("gifs/What\ is\ art.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1,h2,h3{
+    font-size: 21pt;
+    font-family:'pirata';
+    color: #c3e2ff;
+    text-shadow: 2px 2px #015C94;
+
+}
+
+p.projeto{
+    margin-top: 3%;
+    font-size: 16pt;
+    text-align: justify;
+    font-family: 'pirata';
+    color: #F7F5FF;
+    text-shadow: 2px 2px #373636;
+    padding: 2px;
+    margin-left: 6%;
+}
+
+section.module.parallax.parallax-2{
+    background-image: url('imagens/ACIDREZ.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.module.parallax.parallax-2:hover{
+    background-image: url('gifs/OBras.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+   
+    
+}
+li{
+    padding-right: 20%;
+
+}
+p{
+    color: #F7F5FF;
+    text-shadow: 2px 2px #373636;
+    margin-left: 6%;
+    text-align: justify;
+    font-size: 12pt;
+    margin-top: 1%;
+}
+
+li img:hover{
+    border: 1px solid white;
+    border-radius: 15px;
+    
+}
+
+section.module.parallax.parallax-3{
+    background-image: url('imagens/pintores.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.module.parallax.parallax-3:hover{
+    background-image: url('gifs/artistas.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.images{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    border:3px outset darkorange;
+}
+
+.images img{
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: contain;
+    position:sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.estevao:hover{
+    content:url('gifs/estevão.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dali:hover{
+    content:url('gifs/dali.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.frida:hover{
+    content:url('gifs/frida.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gustave:hover{
+    content:url('gifs/gustave.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tarsilia:hover{
+    content:url('gifs/tarsilia.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: darkorange;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(253, 198, 17);
+    border-radius: 2px;
+}
+
+form{
+    width: 250px;
+    height: 400px;
+    margin-left: 32%;
+    background: #fffefe;
+    font-family:'pirata';  
+    margin-top: 16%;
+    border: 2px outset black;
+    border-radius: 2px;
+   
+}
+footer{
+    width: 100%;
+    height: 100vh;
+    padding: 20px 0;
+    background: black;
+}
+
+footer{
+    background-image: url('imagens/celular03.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0 auto;
+    
+}
+
+ h4{
+     text-align: center;
+     font-size: 21pt;
+     font-family:'pirata';
+     color: black;
+     text-shadow: 2px 3px #58aeff;
+     margin: 0 auto;
+ }
+
+input{
+    padding: 10px;
+    width: 210px;
+    height: 30px;
+    margin-top:5%;
+    border: 2px outset rgb(255, 183, 0);
+    border-radius: 3px;
+    font-family: 'pirata';
+    background: rgba(255, 217, 0, 0.227);
+    box-shadow:2px 2px 2px  #000000;
+}
+::placeholder{
+    font-family: 'pirata';
+    font-size: 12pt;
+}
+.entrar{
+    padding: 10px;
+    width: 210px;
+    height: 45px;
+    font-family: 'pirata';
+    font-size: 15pt;
+    font-weight: bold;
+    text-shadow:1px 2px #50b1ed;
+    border: 2px outset rgb(0, 51, 255);
+    border-radius: 3px;
+    background:rgb(0, 145, 223);
+    box-shadow:2px 2px 2px  #000000;
+    cursor: pointer;
+}
+
+.dados{
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.separador{
+    text-align: center;
+    align-items: center;
+    justify-items: center; 
+}
+
+a{
+    color: #000000;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+.cadastro{
+    border: 2px outset rgb(0, 0, 0);
+    width: 250px;
+    height: 50px;
+    margin-left: 32%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.conta{
+    margin-top: 6%;
+    font-family: 'pirata';
+    border-radius: 4px;
+}
+input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+input:focus{
+    border: 3px outset darkorange;
+    background: rgba(255, 183, 0, 0.905);
+}
+
+.entrar:hover{
+    background:rgb(15, 171, 255);
+}
